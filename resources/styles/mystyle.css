@@ -1,0 +1,103 @@
+/*
+Title: HTML5 Documentation - Click to Learn
+Author: Mohammad Imam Hossain
+Date: 2020-04-29
+All rights reserved.
+*/
+
+body{
+    background-image: url('../images/back3.jpg');
+    background-color: slategray;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header{
+    background-color: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgb(51, 255, 187);
+    color: rgb(51, 255, 187);
+
+    padding: 10px;
+    
+    position:sticky;
+    top:0px;
+    height:55px;
+}
+
+header>h3{
+    text-align: center;
+}
+
+#footer{
+    width:25px;
+    white-space: nowrap;
+    overflow:hidden;
+    
+    border-bottom: 1px solid rgb(51, 204, 255);
+    border-radius: 25px;
+    
+    color:rgb(51, 204, 255);
+    background-color: transparent;
+    
+    position:fixed;
+    right:0px;
+    bottom:10px;
+    z-index: +100;
+    
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#footer a{
+    color:rgb(51, 204, 255);
+}
+
+#footer:hover{
+    width:750px;
+}
+
+div#content{
+    background-color: rgba(0,0,0,0.8);
+    width:100%;
+    padding: 30px;
+    min-height: calc(100vh - 55px);
+}
+
+div#content code{
+    color:white;
+}
+
+div#content a{
+    color:white;
+}
+
+div#script{
+    font-size: 120%;
+}
+
+.tag{
+    color:rgb(255, 26, 117);
+}
+
+.atr{
+    color:rgb(0, 204, 0);
+}
+
+.atrval{
+    color: rgb(255, 255, 128);
+}
+
+.css{
+    color: rgb(102, 255, 255);
+}
+
+.const{
+    color: rgb(170, 128, 255);
+}
+
+.comment1{
+    color: rgb(122, 122, 82);
+}

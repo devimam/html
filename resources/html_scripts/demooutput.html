@@ -1,0 +1,129 @@
+<!--
+Title: HTML5 Documentation - Click to Learn
+Author: Mohammad Imam Hossain
+Date: 2020-04-29
+All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="1800">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Document Title</title>
+
+        <!--<base href="https://example.com" target="_self">-->
+        <base href="../../" target="_self">
+
+        <link href="resources/styles/democss.css" rel="stylesheet" type="text/css">
+        <link href="resources/icons/demoicon.ico" rel="icon">
+
+        <style>
+        body{
+          background-image : url('resources/images/demoback.jpg');
+          background-color : slategray;
+          background-attachment : fixed;
+          background-repeat : no-repeat;
+          background-size : cover;
+        }
+        </style>
+
+        <script src="resources/js_scripts/demoscript.js">
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer>
+
+        <!-- HTML Comment: embedded javascript codes -->
+        <script>
+        function callme(a){
+           if(a%2==0) return "even";
+           else return "odd";
+        }
+
+        var retval=callme(10);
+        </script>
+    </head>
+
+    <body onload='alert("Load successful ... ...")' ononline='alert("You are online ... ...")' onoffline='alert("Your are offline ... ...")'>
+
+        <header>
+            <hgroup>
+                <h1>HTML5 Documentation</h1>
+                <h4>Click to Learn</h4>
+            </hgroup>
+
+        <nav>
+            <ul style="list-style-type : none;">
+                <li> <a href="index.html"> <img src="resources/images/demologo.png" alt="site logo" style="height : 80px; width : 200px;"> </a> </li>
+                <li> <a href="intro.html"> Introduction to HTML </a> </li>
+                <li> <a href="ctolearn.html"> Click to learn </a> </li>
+                <li> <a href="learner.html" target="_blank" > Be a learner </a> </li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+
+            <article>
+                <section>
+                    <h1>HTML Introduction</h1>
+                    <p>
+                        <abbr title="Hypertext Markup Language">HTML</abbr> is the <strong>standard markup language</strong> for documents designed to be displayed in a web browser. It can be assisted by technologies such as <b>Cascading Style Sheets</b><sub>(CSS)</sub> and scripting languages such as <mark>JavaScript</mark>. Web browsers receive HTML documents from a web server or from <em>local storage</em> and render the documents into <del>web pages</del> <ins>multimedia web pages</ins>. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                    </p>
+                    <hr>
+                    <p>
+                        HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as <i>headings, paragraphs, lists, links, quotes and other items</i>. HTML elements are delineated by tags, written using angle brackets. Tags such as <code> &lt;img /&gt; and &lt;input /&gt; </code> directly introduce content into the page. Browsers do not display the HTML tags, but use them to interpret the content of the page. HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium <sup>(W3C)</sup>, former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.<br/><small>Press <kbd>Ctrl+W</kbd> for wikipage. Updated on <time>2020-04-25 12:56</time> </small>
+                    </p>
+                </section>
+
+                <section>
+                    <h1>How to use this Website</h1>
+                    <iframe src="https://www.youtube.com/embed/-6cY3xpou0M" width="927" height="546" allow="autoplay" allowfullscreen ></iframe>
+                </section>
+            </article>
+
+            <section>
+                <h1>Be a Learner</h1>
+                <div>
+                    <form action="register.php" method="post" enctype="multipart/form-data">
+                        <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                <label for="uname"> User Name: </label>
+                                <input type="text" value="Mr. X" placeholder="your name" name="uname" id="uname" required>
+                                </td>
+                                <td>
+                                <label for="uemail"> Email: </label>
+                                <input type="email" placeholder="example@gmail.com" name="uemail" id="uemail" required>
+                                </td>
+                                <td>
+                                <input type="submit" value="Register" name="sub">
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </form>
+                </div>
+                <hr>
+                <div>
+                    <form>
+                    <label for="extype"> Share your experience as: </label>
+                    <select id="extype">
+                       <option value="">Select type</option>
+                       <option value="ins">Instructor</option>
+                       <option value="lrn">Learner</option>
+                    </select>
+
+                    <textarea cols=40 rows=20></textarea>
+                    <button type="submit" formaction="getreview.php" formmethod="post">Post review</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer> Copyright © 2015 | All rights reserved </footer>
+
+    </body>
+</html>

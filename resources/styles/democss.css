@@ -1,0 +1,24 @@
+/*
+Title: HTML5 Documentation - Click to Learn
+Author: Mohammad Imam Hossain
+Date: 2020-04-29
+All rights reserved.
+*/
+
+footer{
+	border-top:1px solid orange;
+	text-align:center;
+	color: orange;
+}
+
+nav>ul>li{
+    display: inline-block;
+}
+
+div>form>label, div>form>select{
+    vertical-align: top;
+}
+
+article section:nth-child(2){
+    text-align: center;
+}
