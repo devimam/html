@@ -1,0 +1,718 @@
+<!--
+Title: HTML5 Documentation - Click to Learn
+Author: Mohammad Imam Hossain
+Date: 2020-04-29
+All rights reserved.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mohammad Imam Hossain, Email:imambuet11@gmail.com">
+        <meta name="description" content="This website explains almonst every important HTML elements and attributes and the corresponding description">
+        <meta name="keywords" content="html, manual, documentation, html5, html tags, html attributes">
+        
+        <!--title of the document-->
+        <title>HTML Documentation</title>
+        
+        <!--adding my own icons and stylesheet-->
+        <link rel="icon" href="resources/icons/myicon.ico">
+        <link rel="stylesheet" href="resources/styles/mystyle.css">
+    
+        <!--adding bootstrap libraries-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <header id="header">
+            <h3>HTML5 Documentation - Click to Learn</h3>
+        </header>
+        
+        <!--whole output page section-->
+        <div id="content">
+            
+            <!--show the output and html reference button-->
+            <div style="float:right;">
+                <a href="#mymodal" class="help btn btn-outline-info btn-sm" data-toggle="modal" onclick="help();">?</a>
+                <a type="button" class="btn btn-outline-info btn-sm" target="_blank" href="resources/html_scripts/demooutput.html">HTML Output of this Script</a> <a type="button" class="btn btn-outline-info btn-sm" target="_blank" href="https://html.spec.whatwg.org/">Visit HTML5 Documentation Page</a>
+            </div>
+           
+            <!--start of div script-->
+            <div id="script">
+            <code>
+                <!--document type declaration-->
+                <div>
+                    &lt;<a href="#mymodal" class="dtd" data-toggle="modal" onclick="dtd();" onmouseenter="over('dtd');" onmouseleave="out('dtd')">!<span class='tag'>DOCTYPE</span> <span class="const">html</span></a>&gt;
+
+                </div>
+
+                <!--html element-->
+                <div>
+                    &lt;<a href="#mymodal" class="htmlroot" data-toggle="modal" onclick="htmlroot();" onmouseenter="over('htmlroot')" onmouseleave="out('htmlroot')"><span class='tag'>html</span></a> <a href="#mymodal" class="langatr" data-toggle="modal" onclick="langatr();" onmouseenter="over('langatr')" onmouseleave="out('langatr')"><span class='atr'>lang</span>=<span class='atrval'>&quot;en-US&quot;</span></a>&gt;
+                </div>
+
+                <!--head element collapse section-->
+                <div style='margin-left: 20px;'>
+                    <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#headcollapse" aria-expanded="false" aria-controls="headcollapse">Head Element</button>
+                </div>
+                
+                <div id='headcollapse' class="collapse" style="padding-top:10px;">
+                    
+                    <!--head element-->
+                    <div style="margin-left:30px;">
+                        &lt;<a href="#mymodal" class="headelm" data-toggle="modal" onclick="headelm();" onmouseenter="over('headelm')" onmouseleave="out('headelm')"><span class='tag'>head</span></a>&gt;   
+                    </div>
+
+                    <!--meta charset tag-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="metaelm" data-toggle="modal" onclick="metaelm();" onmouseenter="over('metaelm')" onmouseleave="out('metaelm')"><span class='tag'>meta</span></a> <a href="#mymodal" class="metacharsetatr" data-toggle="modal" onclick="metacharsetatr();" onmouseenter="over('metacharsetatr')" onmouseleave="out('metacharsetatr')"><span class='atr'>charset</span>=<span class='atrval'>&quot;utf-8&quot;</span></a>&gt;   
+                    </div>
+
+                    <!--meta http-equiv tag-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="metaelm" data-toggle="modal" onclick="metaelm();" onmouseenter="over('metaelm')" onmouseleave="out('metaelm')"><span class='tag'>meta</span></a> <a href="#mymodal" class="metahttpequivatr" data-toggle="modal" onclick="metahttpequivatr();" onmouseenter="over('metahttpequivatr')" onmouseleave="out('metahttpequivatr')"><span class='atr'>http-equiv</span>=<span class='atrval'>&quot;refresh&quot;</span> <span class='atr'>content</span>=<span class='atrval'>&quot;1800&quot;</span></a>&gt;   
+                    </div>
+
+                    <!--meta name tag-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="metaelm" data-toggle="modal" onclick="metaelm();" onmouseenter="over('metaelm')" onmouseleave="out('metaelm')"><span class='tag'>meta</span></a> <a href="#mymodal" class="metanameatr" data-toggle="modal" onclick="metanameatr();" onmouseenter="over('metanameatr')" onmouseleave="out('metanameatr')"><span class='atr'>name</span>=<span class='atrval'>&quot;viewport&quot;</span> <span class='atr'>content</span>=<span class='atrval'>&quot;width=device-width, initial-scale=1&quot;</span></a>&gt; 
+                    </div>
+
+                    <br/>
+
+                    <!--title element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="titleelm" data-toggle="modal" onclick="titleelm();" onmouseenter="over('titleelm')" onmouseleave="out('titleelm')"><span class='tag'>title</span></a>&gt;Document Title&lt;<a href="#mymodal" class="titleelm" data-toggle="modal" onclick="titleelm();" onmouseenter="over('titleelm')" onmouseleave="out('titleelm')">/<span class='tag'>title</span></a>&gt;  
+                    </div>
+
+                    <br/>
+
+                    <!--base element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="baseelm" data-toggle="modal" onclick="baseelm();" onmouseenter="over('baseelm')" onmouseleave="out('baseelm')"><span class='tag'>base</span></a> <a href="#mymodal" class="basehrefatr" data-toggle="modal" onclick="basehrefatr();" onmouseenter="over('basehrefatr')" onmouseleave="out('basehrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;https://example.com&quot;</span></a> <a href="#mymodal" class="targetatr" data-toggle="modal" onclick="targetatr();" onmouseenter="over('targetatr')" onmouseleave="out('targetatr')"><span class='atr'>target</span>=<span class='atrval'>&quot;_self&quot;</span></a>&gt;   
+                    </div>
+
+                    <br/>
+
+                    <!--link element for css-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="linkelm" data-toggle="modal" onclick="linkelm();" onmouseenter="over('linkelm')" onmouseleave="out('linkelm')"><span class='tag'>link</span></a> <a href="#mymodal" class="hrefatr" data-toggle="modal" onclick="hrefatr();" onmouseenter="over('hrefatr')" onmouseleave="out('hrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;resources/styles/democss.css&quot;</span></a> <a href="#mymodal" class="linkrelatr" data-toggle="modal" onclick="linkrelatr();" onmouseenter="over('linkrelatr')" onmouseleave="out('linkrelatr')"><span class='atr'>rel</span>=<span class='atrval'>&quot;stylesheet&quot;</span></a> <a href="#mymodal" class="linktypeatr" data-toggle="modal" onclick="linktypeatr();" onmouseenter="over('linktypeatr')" onmouseleave="out('linktypeatr')"><span class='atr'>type</span>=<span class='atrval'>&quot;text/css&quot;</span></a>&gt;   
+                    </div>
+
+                    <!--link element for icons-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="linkelm" data-toggle="modal" onclick="linkelm();" onmouseenter="over('linkelm')" onmouseleave="out('linkelm')"><span class='tag'>link</span></a> <a href="#mymodal" class="hrefatr" data-toggle="modal" onclick="hrefatr();" onmouseenter="over('hrefatr')" onmouseleave="out('hrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;resources/icons/demoicon.ico&quot;</span></a> <a href="#mymodal" class="linkrelatr" data-toggle="modal" onclick="linkrelatr();" onmouseenter="over('linkrelatr')" onmouseleave="out('linkrelatr')"><span class='atr'>rel</span>=<span class='atrval'>&quot;icon&quot;</span></a>&gt;  
+                    </div>
+
+                    <br/>
+
+                    <!--style element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="styleelm" data-toggle="modal" onclick="styleelm();" onmouseenter="over('styleelm')" onmouseleave="out('styleelm')"><span class='tag'>style</span></a>&gt;   
+                    </div>
+
+                    <!--style element content-->
+                    <div style="margin-left:90px;">
+                    <a href="#mymodal" class="cssscript" data-toggle="modal" onclick="cssscript();" onmouseenter="over('cssscript')" onmouseleave="out('cssscript')">
+                        <span class='tag'>body</span>{<br/>
+                        &nbsp;&nbsp;<span class='css'>background-image</span> : <span class='css'>url</span>(<span class='atrval'>'resources/images/demoback.jpg'</span>);<br/>
+                        &nbsp;&nbsp;<span class='css'>background-color</span> : <span class='css'>slategray</span>;<br/>
+                        &nbsp;&nbsp;<span class='css'>background-attachment</span> : <span class='css'>fixed</span>;<br/>
+                        &nbsp;&nbsp;<span class='css'>background-repeat</span> : <span class='css'>no-repeat</span>;<br/>
+                        &nbsp;&nbsp;<span class='css'>background-size</span> : <span class='css'>cover</span>;<br/>
+                        }
+                    </a>
+                    </div>
+
+                    <!--end of style element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="styleelm" data-toggle="modal" onclick="styleelm();" onmouseenter="over('styleelm')" onmouseleave="out('styleelm')">/<span class='tag'>style</span></a>&gt;   
+                    </div>
+
+                    <br/>
+
+                    <!--script 1 element external source-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="script1elm" data-toggle="modal" onclick="script1elm();" onmouseenter="over('script1elm')" onmouseleave="out('script1elm')"><span class='tag'>script</span></a> <a href="#mymodal" class="script1srcatr" data-toggle="modal" onclick="script1srcatr();" onmouseenter="over('script1srcatr')" onmouseleave="out('script1srcatr')"><span class='atr'>src</span>=<span class='atrval'>&quot;resources/js_scripts/demoscript.js&quot;</span></a>&gt;
+                    </div>
+
+                    <!--script 1 element async defer-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="script1elm" data-toggle="modal" onclick="script1elm();" onmouseenter="over('script1elm')" onmouseleave="out('script1elm')"><span class='tag'>script</span></a> <a href="#mymodal" class="script1srcatr" data-toggle="modal" onclick="script1srcatr();" onmouseenter="over('script1srcatr')" onmouseleave="out('script1srcatr')"><span class='atr'>src</span>=<span class='atrval'>&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&quot;</span></a> <a href="#mymodal" class="script1asyncdeferatr" data-toggle="modal" onclick="script1asyncdeferatr();" onmouseenter="over('script1asyncdeferatr')" onmouseleave="out('script1asyncdeferatr')"> <span class='atr'>async defer</span></a>&gt;  
+                    </div>
+
+                    <br/>
+
+                    <!--html comment-->
+                    <div style="margin-left:60px;">
+                        <a href="#mymodal" class="comment" data-toggle="modal" onclick="comment();" onmouseenter="over('comment')" onmouseleave="out('comment')"><span class="comment1">&lt;!-- HTML Comment: embedded javascript codes --&gt;</span></a>   
+                    </div>
+
+                    <!--script 2 element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="script1elm" data-toggle="modal" onclick="script1elm();" onmouseenter="over('script1elm')" onmouseleave="out('script1elm')"><span class='tag'>script</span></a>&gt;   
+                    </div>
+
+                    <!--script 2 element content-->
+                    <div style="margin-left:90px;" title="embedded script">
+                    <a href="#mymodal" class="jscontent" data-toggle="modal" onclick="jscontent();" onmouseenter="over('jscontent')" onmouseleave="out('jscontent')">
+                        <span class="css">function</span> <span class="atr">callme</span>(a){<br/>
+                        &nbsp;&nbsp;&nbsp;<span class="tag">if</span>(a<span class="tag">%</span><span class="const">2</span><span class="tag">==</span><span class="const">0</span>) <span class="tag">return</span> <span class="atrval">"even"</span>;<br/>
+                        &nbsp;&nbsp;&nbsp;<span class="tag">else return</span> <span class="atrval">"odd"</span>;<br/>
+                        }<br/>
+                        <br/>
+                        <span class="css">var</span> retval=<span class="css">callme</span>(<span class="const">10</span>);<br/>
+                    </a>
+                    </div>
+
+                    <!--end of script 2 element-->
+                    <div style="margin-left:60px;">
+                        &lt;<a href="#mymodal" class="script1elm" data-toggle="modal" onclick="script1elm();" onmouseenter="over('script1elm')" onmouseleave="out('script1elm')">/<span class='tag'>script</span></a>&gt;  
+                    </div>
+
+                    <!--end of head element-->
+                    <div style="margin-left:30px;">
+                        &lt;<a href="#mymodal" class="headelm" data-toggle="modal" onclick="headelm();" onmouseenter="over('headelm')" onmouseleave="out('headelm')">/<span class='tag'>head</span></a>&gt;
+                    </div>
+                
+                <!--end of head collapse-->
+                </div>
+                
+                <br/>
+                
+                <!--body element collapse section-->
+                <div style='margin-left: 20px;'>
+                    <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#bodycollapse" aria-expanded="false" aria-controls="bodycollapse">Body Element</button>
+                </div>
+                
+                <div id='bodycollapse' class="collapse" style="padding-top:10px;">
+                
+                    <!--body element-->
+                    <div style="margin-left:30px;">
+                        &lt;<a href="#mymodal" class="bodyelm" data-toggle="modal" onclick="bodyelm();" onmouseenter="over('bodyelm')" onmouseleave="out('bodyelm')"><span class='tag'>body</span></a> <a href="#mymodal" class="bodyatr" data-toggle="modal" onclick="bodyatr();" onmouseenter="over('bodyatr')" onmouseleave="out('bodyatr')"><span class='atr'>onload</span>=&apos;<span class='css'>alert</span>(<span class='atrval'>&quot;Load successful ... ...&quot;</span>)&apos;</a>  <a href="#mymodal" class="bodyatr" data-toggle="modal" onclick="bodyatr();" onmouseenter="over('bodyatr')" onmouseleave="out('bodyatr')"><span class='atr'>ononline</span>=&apos;<span class='css'>alert</span>(<span class='atrval'>&quot;You are online ... ...&quot;</span>)&apos;</a> <a href="#mymodal" class="bodyatr" data-toggle="modal" onclick="bodyatr();" onmouseenter="over('bodyatr')" onmouseleave="out('bodyatr')"><span class='atr'>onoffline</span>=&apos;<span class='css'>alert</span>(<span class='atrval'>&quot;Your are offline ... ...&quot;</span>)&apos;</a>&gt;
+                    </div>
+
+                    <br/>
+                    
+                    <!--header element collapse section-->
+                    <div style='margin-left: 50px;' >
+                        <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#headercollapse" aria-expanded="false" aria-controls="headercollapse">Header Element</button>
+                    </div>
+                
+                    <div id='headercollapse' class="collapse" style="padding-top:10px;">
+                
+                    
+                        <!--header element-->
+                        <div style="margin-left:60px;">
+                            &lt;<a href="#mymodal" class="headerelm" data-toggle="modal" onclick="headerelm();" onmouseenter="over('headerelm')" onmouseleave="out('headerelm')"><span class='tag'>header</span></a>&gt;
+                        </div>
+
+                        <!--hgroup element-->
+                        <div style="margin-left:90px;">
+                            &lt;<a href="#mymodal" class="hgroupelm" data-toggle="modal" onclick="hgroupelm();" onmouseenter="over('hgroupelm')" onmouseleave="out('hgroupelm')"><span class='tag'>hgroup</span></a>&gt;
+                        </div>
+
+                        <!--heading 1 element-->
+                        <div style="margin-left:120px;">
+                            &lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>h1</span></a>&gt;HTML5 Documentation&lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')">/<span class='tag'>h1</span></a>&gt;
+                        </div>
+
+                        <!--heading 4 element-->
+                        <div style="margin-left:120px;">
+                            &lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>h4</span></a>&gt;Click to Learn&lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')">/<span class='tag'>h4</span></a>&gt;
+                        </div>
+
+                        <!--end of hgroup element-->
+                        <div style="margin-left:90px;">
+                            &lt;<a href="#mymodal" class="hgroupelm" data-toggle="modal" onclick="hgroupelm();" onmouseenter="over('hgroupelm')" onmouseleave="out('hgroupelm')">/<span class='tag'>hgroup</span></a>&gt;
+                        </div>
+
+                        <br/>
+
+                        <!--nav element-->
+                        <div style="margin-left:90px;">
+                            &lt;<a href="#mymodal" class="navelm" data-toggle="modal" onclick="navelm();" onmouseenter="over('navelm')" onmouseleave="out('navelm')"><span class='tag'>nav</span></a>&gt;
+                        </div>
+
+                        <!--list element-->
+                        <div style="margin-left:120px;">
+                            &lt;<a href="#mymodal" class="listelm" data-toggle="modal" onclick="listelm();" onmouseenter="over('listelm')" onmouseleave="out('listelm')"><span class='tag'>ul</span></a> <a href="#mymodal" class="styleatr" data-toggle="modal" onclick="styleatr();" onmouseenter="over('styleatr')" onmouseleave="out('styleatr')"><span class='atr'>style</span>=&quot;<span class='css'>list-style-type</span> : <span class='css'>none</span>;&quot;</a>&gt;
+                        </div>
+
+                        <!--list items-->
+                        <div style="margin-left: 150px;">
+
+                                <!--list item 1-->
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;<span class='tag'>li</span>&gt;</a>
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')"><span class='tag'>a</span></a>
+
+                            <a href="#mymodal" class="ahrefatr" data-toggle="modal" onclick="ahrefatr();" onmouseenter="over('ahrefatr')" onmouseleave="out('ahrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;index.html&quot;</span></a>&gt;
+
+
+                            &lt;<a href="#mymodal" class="imgelm" data-toggle="modal" onclick="imgelm();" onmouseenter="over('imgelm')" onmouseleave="out('imgelm')"><span class='tag'>img</span> <span class='atr'>src</span>=<span class='atrval'>&quot;resources/images/demologo.jpg&quot;</span> <span class='atr'>alt</span>=<span class='atrval'>&quot;site logo&quot;</span></a> <a href="#mymodal" class="styleatr" data-toggle="modal" onclick="styleatr();" onmouseenter="over('styleatr')" onmouseleave="out('styleatr')"><span class='atr'>style</span>=&quot;<span class='css'>height</span> : <span class="const">80</span><span class="tag">px</span>; <span class='css'>width</span> : <span class="const">200</span><span class="tag">px</span>;&quot;</a>&gt;
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')">/<span class='tag'>a</span></a>&gt;
+
+
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;/<span class='tag'>li</span>&gt;</a><br/>
+
+
+                                <!--list item 2-->
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;<span class='tag'>li</span>&gt;</a>
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')"><span class='tag'>a</span></a>
+
+                            <a href="#mymodal" class="ahrefatr" data-toggle="modal" onclick="ahrefatr();" onmouseenter="over('ahrefatr')" onmouseleave="out('ahrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;intro.html&quot;</span></a>&gt;
+
+                                Introduction to HTML
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')">/<span class='tag'>a</span></a>&gt;
+
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;/<span class='tag'>li</span>&gt;</a><br/>
+
+
+                                <!--list item 3-->
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;<span class='tag'>li</span>&gt;</a>
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')"><span class='tag'>a</span></a>
+
+                            <a href="#mymodal" class="ahrefatr" data-toggle="modal" onclick="ahrefatr();" onmouseenter="over('ahrefatr')" onmouseleave="out('ahrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;ctolearn.html&quot;</span></a>&gt;
+
+                                Click to learn
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')">/<span class='tag'>a</span></a>&gt;
+
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;/<span class='tag'>li</span>&gt;</a><br/>
+
+                                <!--list item 4-->
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;<span class='tag'>li</span>&gt;</a>
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')"><span class='tag'>a</span></a>
+
+                            <a href="#mymodal" class="ahrefatr" data-toggle="modal" onclick="ahrefatr();" onmouseenter="over('ahrefatr')" onmouseleave="out('ahrefatr')"><span class='atr'>href</span>=<span class='atrval'>&quot;learner.html&quot;</span></a> <a href="#mymodal" class="targetatr" data-toggle="modal" onclick="targetatr();" onmouseenter="over('targetatr')" onmouseleave="out('targetatr')"><span class='atr'>target</span>=<span class='atrval'>&quot;_blank&quot;</span></a> &gt;
+
+                                Be a learner
+
+                            &lt;<a href="#mymodal" class="aelm" data-toggle="modal" onclick="aelm();" onmouseenter="over('aelm')" onmouseleave="out('aelm')">/<span class='tag'>a</span></a>&gt;
+
+                            <a href="#mymodal" class="liatr" data-toggle="modal" onclick="liatr();" onmouseenter="over('liatr')" onmouseleave="out('liatr')">&lt;/<span class='tag'>li</span>&gt;</a><br/>
+
+                        </div>
+
+                        <!--end of list element-->
+                        <div style="margin-left:120px;">
+                            &lt;<a href="#mymodal" class="listelm" data-toggle="modal" onclick="listelm();" onmouseenter="over('listelm')" onmouseleave="out('listelm')">/<span class='tag'>ul</span></a>&gt;
+                        </div>
+
+                        <!--end of nav element-->
+                        <div style="margin-left:90px;">
+                            &lt;<a href="#mymodal" class="navelm" data-toggle="modal" onclick="navelm();" onmouseenter="over('navelm')" onmouseleave="out('navelm')">/<span class='tag'>nav</span></a>&gt;
+                        </div>
+
+                        <!--end of header element-->
+                        <div style="margin-left:60px;">
+                            &lt;<a href="#mymodal" class="headerelm" data-toggle="modal" onclick="headerelm();" onmouseenter="over('headerelm')" onmouseleave="out('headerelm')">/<span class='tag'>header</span></a>&gt;
+                        </div>
+
+                    <!--end of header collapse-->
+                    </div>
+                    
+                    <br/>
+
+                    <!--main element collapse section-->
+                    <div style='margin-left: 50px;' >
+                        <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#maincollapse" aria-expanded="false" aria-controls="maincollapse">Main Element&nbsp;&nbsp;</button>
+                    </div>
+                
+                    <div id='maincollapse' class="collapse" style="padding-top:10px;">
+                
+                    
+                        <!--main element-->
+                        <div style="margin-left:60px;">
+                            &lt;<a href="#mymodal" class="mainelm" data-toggle="modal" onclick="mainelm();" onmouseenter="over('mainelm')" onmouseleave="out('mainelm')"><span class='tag'>main</span></a>&gt;
+                        </div>
+
+                        <br/>
+                        
+                        <!--article element collapse section-->
+                        <div style='margin-left: 80px;' >
+                            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#articlecollapse" aria-expanded="false" aria-controls="articlecollapse">Article Element</button>
+                        </div>
+
+                        <div id='articlecollapse' class="collapse" style="padding-top:10px;">
+
+                            <!--article element-->
+                            <div style="margin-left:90px;">
+                                &lt;<a href="#mymodal" class="articleelm" data-toggle="modal" onclick="articleelm();" onmouseenter="over('articleelm')" onmouseleave="out('articleelm')"><span class='tag'>article</span></a>&gt;
+                            </div>
+
+                            <!--section element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')"><span class='tag'>section</span></a>&gt;
+                            </div>
+
+                            <!--heading 1 element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>h1</span></a>&gt;HTML Introduction&lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>/h1</span></a>&gt;
+                            </div>
+
+                            <!--paragraph element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="pelm" data-toggle="modal" onclick="pelm();" onmouseenter="over('pelm')" onmouseleave="out('pelm')"><span class='tag'>p</span></a>&gt;
+                            </div>
+
+                            <!--paragraph content-->
+                            <div style="margin-left:180px;">
+
+                                <a href="#mymodal" class="abbrelm" data-toggle="modal" onclick="abbrelm();" onmouseenter="over('abbrelm')" onmouseleave="out('abbrelm')">&lt;<span class='tag'>abbr</span> <span class='atr'>title</span>=<span class='atrval'>&quot;Hypertext Markup Language&quot;</span>&gt;HTML&lt;/<span class='tag'>abbr</span>&gt;</a> 
+                                is the <a href="#mymodal" class="strongelm" data-toggle="modal" onclick="strongelm();" onmouseenter="over('strongelm')" onmouseleave="out('strongelm')">&lt;<span class='tag'>strong</span>&gt;standard markup language&lt;/<span class='tag'>strong</span>&gt;</a> for documents designed to be displayed in a web browser. It can be assisted by technologies such as <a href="#mymodal" class="belm" data-toggle="modal" onclick="belm();" onmouseenter="over('belm')" onmouseleave="out('belm')">&lt;<span class='tag'>b</span>&gt;Cascading Style Sheets&lt;/<span class='tag'>b</span>&gt;</a><a href="#mymodal" class="subelm" data-toggle="modal" onclick="subelm();" onmouseenter="over('subelm')" onmouseleave="out('subelm')">&lt;<span class='tag'>sub</span>&gt;(CSS)&lt;/<span class='tag'>sub</span>&gt;</a> and scripting languages such as <a href="#mymodal" class="markelm" data-toggle="modal" onclick="markelm();" onmouseenter="over('markelm')" onmouseleave="out('markelm')">&lt;<span class='tag'>mark</span>&gt;JavaScript&lt;/<span class='tag'>mark</span>&gt;</a>. Web browsers receive HTML documents from a web server or from <a href="#mymodal" class="emelm" data-toggle="modal" onclick="emelm();" onmouseenter="over('emelm')" onmouseleave="out('emelm')">&lt;<span class='tag'>em</span>&gt;local storage&lt;/<span class='tag'>em</span>&gt;</a> and render the documents into <a href="#mymodal" class="delelm" data-toggle="modal" onclick="delelm();" onmouseenter="over('delelm')" onmouseleave="out('delelm')">&lt;<span class='tag'>del</span>&gt;web pages&lt;/<span class='tag'>del</span>&gt;</a> <a href="#mymodal" class="inselm" data-toggle="modal" onclick="inselm();" onmouseenter="over('inselm')" onmouseleave="out('inselm')">&lt;<span class='tag'>ins</span>&gt;multimedia web pages&lt;/<span class='tag'>ins</span>&gt;</a>. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+                            </div>
+
+                            <!--end of paragraph element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="pelm" data-toggle="modal" onclick="pelm();" onmouseenter="over('pelm')" onmouseleave="out('pelm')">/<span class='tag'>p</span></a>&gt;
+                            </div>
+
+                            <!--hr element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="hrelm" data-toggle="modal" onclick="hrelm();" onmouseenter="over('hrelm')" onmouseleave="out('hrelm')"><span class='tag'>hr</span></a>&gt;
+                            </div>
+
+                            <!--paragraph element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="pelm" data-toggle="modal" onclick="pelm();" onmouseenter="over('pelm')" onmouseleave="out('pelm')"><span class='tag'>p</span></a>&gt;
+                            </div>
+
+                            <!--paragraph content-->
+                            <div style="margin-left:180px;">
+
+                            HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as <a href="#mymodal" class="ielm" data-toggle="modal" onclick="ielm();" onmouseenter="over('ielm')" onmouseleave="out('ielm')">&lt;<span class='tag'>i</span>&gt;headings, paragraphs, lists, links, quotes and other items&lt;/<span class='tag'>i</span>&gt;</a>. HTML elements are delineated by tags, written using angle brackets. Tags such as <a href="#mymodal" class="codeelm" data-toggle="modal" onclick="codeelm();" onmouseenter="over('codeelm')" onmouseleave="out('codeelm')">&lt;<span class='tag'>code</span>&gt; <span class="const">&amp;lt;</span>img /<span class="const">&amp;gt;</span> and <span class="const">&amp;lt;</span>input /<span class="const">&amp;gt;</span> &lt;/<span class="tag">code</span>&gt;</a> directly introduce content into the page. Browsers do not display the HTML tags, but use them to interpret the content of the page. HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium <a href="#mymodal" class="supelm" data-toggle="modal" onclick="supelm();" onmouseenter="over('supelm')" onmouseleave="out('supelm')">&lt;<span class='tag'>sup</span>&gt;(W3C)&lt;/<span class='tag'>sup</span>&gt;</a>, former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.<a href="#mymodal" class="brelm" data-toggle="modal" onclick="brelm();" onmouseenter="over('brelm')" onmouseleave="out('brelm')">&lt;<span class='tag'>br</span>/&gt;</a><a href="#mymodal" class="smallelm" data-toggle="modal" onclick="smallelm();" onmouseenter="over('smallelm')" onmouseleave="out('smallelm')">&lt;<span class='tag'>small</span>&gt;</a>Press <a href="#mymodal" class="kbdelm" data-toggle="modal" onclick="kbdelm();" onmouseenter="over('kbdelm')" onmouseleave="out('kbdelm')">&lt;<span class='tag'>kbd</span>&gt;Ctrl+W&lt;/<span class='tag'>kbd</span>&gt;</a> for wikipage. Updated on <a href="#mymodal" class="timeelm" data-toggle="modal" onclick="timeelm();" onmouseenter="over('timeelm')" onmouseleave="out('timeelm')">&lt;<span class='tag'>time</span>&gt;2020-04-25 12:56&lt;/<span class='tag'>time</span>&gt;</a> <a href="#mymodal" class="smallelm" data-toggle="modal" onclick="smallelm();" onmouseenter="over('smallelm')" onmouseleave="out('smallelm')">&lt;/<span class='tag'>small</span>&gt;</a>
+                            </div>
+
+                            <!--end of paragraph element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="pelm" data-toggle="modal" onclick="pelm();" onmouseenter="over('pelm')" onmouseleave="out('pelm')">/<span class='tag'>p</span></a>&gt;
+                            </div>
+
+                            <!--end of section element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')">/<span class='tag'>section</span></a>&gt;
+                            </div>
+
+                            <br/>
+
+                            <!--section element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')"><span class='tag'>section</span></a>&gt;
+                            </div>
+
+                            <!--heading 1 element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>h1</span></a>&gt;How to use this Website&lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')">/<span class='tag'>h1</span></a>&gt;
+                            </div>
+
+                            <!--iframe element-->
+                            <div style="margin-left:150px;">
+                                <a href="#mymodal" class="iframeelm" data-toggle="modal" onclick="iframeelm();" onmouseenter="over('iframeelm')" onmouseleave="out('iframeelm')">&lt;<span class='tag'>iframe</span> <span class='atr'>src</span>=<span class='atrval'>&quot;https://www.youtube.com/embed/HHMWocHBH5o&quot;</span> <span class='atr'>width</span>=<span class='atrval'>&quot;932&quot;</span> <span class='atr'>height</span>=<span class='atrval'>&quot;546&quot;</span> <span class='atr'>allow</span>=<span class='atrval'>&quot;autoplay&quot;</span> <span class='atr'>allowfullscreen</span> &gt;&lt;/<span class='tag'>iframe</span>&gt;</a>
+                            </div>
+
+                            <!--end of section element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')">/<span class='tag'>section</span></a>&gt;
+                            </div>
+
+                            <!--end of article element-->
+                            <div style="margin-left:90px;">
+                                &lt;<a href="#mymodal" class="articleelm" data-toggle="modal" onclick="articleelm();" onmouseenter="over('articleelm')" onmouseleave="out('articleelm')">/<span class='tag'>article</span></a>&gt;
+                            </div>
+                        
+                        <!--end of article collapse-->
+                        </div>
+                        
+                        <br/>
+
+                        <!--section element collapse section-->
+                        <div style='margin-left: 80px;' >
+                            <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#sectioncollapse" aria-expanded="false" aria-controls="sectioncollapse">Section Element</button>
+                        </div>
+
+                        <div id='sectioncollapse' class="collapse" style="padding-top:10px;">
+                        
+                            <!--section element-->
+                            <div style="margin-left:90px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')"><span class='tag'>section</span></a>&gt;
+                            </div>
+
+                            <!--heading 1 element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')"><span class='tag'>h1</span></a>&gt;Be a Learner&lt;<a href="#mymodal" class="helm" data-toggle="modal" onclick="helm();" onmouseenter="over('helm')" onmouseleave="out('helm')">/<span class='tag'>h1</span></a>&gt;
+                            </div>
+
+                            <!--div element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="divelm" data-toggle="modal" onclick="divelm();" onmouseenter="over('divelm')" onmouseleave="out('divelm')"><span class='tag'>div</span></a>&gt;
+                            </div>
+
+                            <!--form element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="formelm" data-toggle="modal" onclick="formelm();" onmouseenter="over('formelm')" onmouseleave="out('formelm')"><span class='tag'>form</span></a> <a href="#mymodal" class="actionatr" data-toggle="modal" onclick="actionatr();" onmouseenter="over('actionatr')" onmouseleave="out('actionatr')"><span class='atr'>action</span>=<span class='atrval'>&quot;register.php&quot;</span></a> <a href="#mymodal" class="methodatr" data-toggle="modal" onclick="methodatr();" onmouseenter="over('methodatr')" onmouseleave="out('methodatr')"><span class='atr'>method</span>=<span class='atrval'>&quot;post&quot;</span></a> <a href="#mymodal" class="enctypeatr" data-toggle="modal" onclick="enctypeatr();" onmouseenter="over('enctypeatr')" onmouseleave="out('enctypeatr')"><span class='atr'>enctype</span>=<span class='atrval'>&quot;multipart/form-data&quot;</span>&gt;</a>
+                            </div>
+
+                            <!--table element-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>table</span></a>&gt;
+                            </div>
+
+                            <!--table body-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>tbody</span></a>&gt;
+                            </div>
+
+                            <!--first row-->
+                            <div style="margin-left:210px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>tr</span></a>&gt;
+                            </div>
+
+                            <!--first column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--label element-->
+                            <div style="margin-left:270px;">
+                                &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')"><span class='tag'>label</span> <span class='atr'>for</span>=<span class='atrval'>&quot;uname&quot;</span></a>&gt; User Name: &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')">/<span class='tag'>label</span></a>&gt;
+                            </div>
+
+                            <!--input element-->
+                            <div style="margin-left:270px;">
+                                &lt;<a href="#mymodal" class="inputelm" data-toggle="modal" onclick="inputelm();" onmouseenter="over('inputelm')" onmouseleave="out('inputelm')"><span class='tag'>input</span> <span class='atr'>type</span>=<span class='atrval'>&quot;text&quot;</span></a> <a href="#mymodal" class="inputatr" data-toggle="modal" onclick="inputatr();" onmouseenter="over('inputatr')" onmouseleave="out('inputatr')"><span class='atr'>value</span>=<span class='atrval'>&quot;Mr. X&quot;</span> <span class='atr'>placeholder</span>=<span class='atrval'>&quot;your name&quot;</span> <span class='atr'>name</span>=<span class='atrval'>&quot;uname&quot;</span> <span class='atr'>id</span>=<span class='atrval'>&quot;uname&quot;</span> <span class='atr'>required</span></a>&gt;
+                            </div>
+
+                            <!--end of first column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--second column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--label element-->
+                            <div style="margin-left:270px;">
+                                &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')"><span class='tag'>label</span> <span class='atr'>for</span>=<span class='atrval'>&quot;uemail&quot;</span></a>&gt; Email: &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')">/<span class='tag'>label</span></a>&gt;
+                            </div>
+
+                            <!--input element-->
+                            <div style="margin-left:270px;">
+                                &lt;<a href="#mymodal" class="inputelm" data-toggle="modal" onclick="inputelm();" onmouseenter="over('inputelm')" onmouseleave="out('inputelm')"><span class='tag'>input</span> <span class='atr'>type</span>=<span class='atrval'>&quot;email&quot;</span></a> <a href="#mymodal" class="inputatr" data-toggle="modal" onclick="inputatr();" onmouseenter="over('inputatr')" onmouseleave="out('inputatr')"><span class='atr'>placeholder</span>=<span class='atrval'>&quot;example@gmail.com&quot;</span> <span class='atr'>name</span>=<span class='atrval'>&quot;uemail&quot;</span> <span class='atr'>id</span>=<span class='atrval'>&quot;uemail&quot;</span> <span class='atr'>required</span></a>&gt;
+                            </div>
+
+                            <!--end of second column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--third column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')"><span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--input element-->
+                            <div style="margin-left:270px;">
+                                &lt;<a href="#mymodal" class="inputelm" data-toggle="modal" onclick="inputelm();" onmouseenter="over('inputelm')" onmouseleave="out('inputelm')"><span class='tag'>input</span> <span class='atr'>type</span>=<span class='atrval'>&quot;submit&quot;</span></a> <a href="#mymodal" class="inputatr" data-toggle="modal" onclick="inputatr();" onmouseenter="over('inputatr')" onmouseleave="out('inputatr')"><span class='atr'>value</span>=<span class='atrval'>&quot;Register&quot;</span> <span class='atr'>name</span>=<span class='atrval'>&quot;sub&quot;</span></a>&gt;
+                            </div>
+
+                            <!--end of third column-->
+                            <div style="margin-left:240px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>td</span></a>&gt;
+                            </div>
+
+                            <!--end of first row-->
+                            <div style="margin-left:210px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>tr</span></a>&gt;
+                            </div>
+
+                            <!--end of table body-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>tbody</span></a>&gt;
+                            </div>
+
+                            <!--end of table-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="tableelm" data-toggle="modal" onclick="tableelm();" onmouseenter="over('tableelm')" onmouseleave="out('tableelm')">/<span class='tag'>table</span></a>&gt;
+                            </div>
+
+                            <!--end of form element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="formelm" data-toggle="modal" onclick="formelm();" onmouseenter="over('formelm')" onmouseleave="out('formelm')">/<span class='tag'>form</span></a>&gt;
+                            </div>
+
+                            <!--end of div element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="divelm" data-toggle="modal" onclick="divelm();" onmouseenter="over('divelm')" onmouseleave="out('divelm')">/<span class='tag'>div</span></a>&gt;
+                            </div>
+
+                            <!--hr element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="hrelm" data-toggle="modal" onclick="hrelm();" onmouseenter="over('hrelm')" onmouseleave="out('hrelm')"><span class='tag'>hr</span></a>&gt;
+                            </div>
+
+                            <!--div element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="divelm" data-toggle="modal" onclick="divelm();" onmouseenter="over('divelm')" onmouseleave="out('divelm')"><span class='tag'>div</span></a>&gt;
+                            </div>
+
+                            <!--form element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="formelm" data-toggle="modal" onclick="formelm();" onmouseenter="over('formelm')" onmouseleave="out('formelm')"><span class='tag'>form</span></a>&gt;
+                            </div>
+
+                            <!--label element-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')"><span class='tag'>label</span> <span class='atr'>for</span>=<span class='atrval'>&quot;extype&quot;</span></a>&gt; Share your experience as: &lt;<a href="#mymodal" class="labelelm" data-toggle="modal" onclick="labelelm();" onmouseenter="over('labelelm')" onmouseleave="out('labelelm')">/<span class='tag'>label</span></a>&gt;
+                            </div>
+
+                            <!--select element-->
+                            <div style="margin-left:180px;">
+                                &lt;<a href="#mymodal" class="selectelm" data-toggle="modal" onclick="selectelm();" onmouseenter="over('selectelm')" onmouseleave="out('selectelm')"><span class='tag'>select</span> <span class='atr'>id</span>=<span class='atrval'>&quot;extype&quot;</span></a>&gt;<br/>
+
+
+                                &nbsp;&nbsp;&nbsp;&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')"><span class='tag'>option</span> <span class='atr'>value</span>=<span class='atrval'>&quot;&quot;</span></a>&gt;Select type&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')">/<span class='tag'>option</span></a>&gt;<br/>
+
+                                &nbsp;&nbsp;&nbsp;&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')"><span class='tag'>option</span> <span class='atr'>value</span>=<span class='atrval'>&quot;ins&quot;</span></a>&gt;Instructor&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')">/<span class='tag'>option</span></a>&gt;<br/>
+
+                                &nbsp;&nbsp;&nbsp;&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')"><span class='tag'>option</span> <span class='atr'>value</span>=<span class='atrval'>&quot;lrn&quot;</span></a>&gt;Learner&lt;<a href="#mymodal" class="optionelm" data-toggle="modal" onclick="optionelm();" onmouseenter="over('optionelm')" onmouseleave="out('optionelm')">/<span class='tag'>option</span></a>&gt;<br/>
+
+                                &lt;<a href="#mymodal" class="selectelm" data-toggle="modal" onclick="selectelm();" onmouseenter="over('selectelm')" onmouseleave="out('selectelm')">/<span class='tag'>select</span></a>&gt;
+                            </div>
+
+                            <br/>
+
+                            <!--textarea element-->
+                            <div style="margin-left:180px;">
+                                <a href="#mymodal" class="tareaelm" data-toggle="modal" onclick="tareaelm();" onmouseenter="over('tareaelm')" onmouseleave="out('tareaelm')">&lt;<span class='tag'>textarea</span> <span class='atr'>cols</span>=<span class='atrval'>40</span> <span class='atr'>rows</span>=<span class='atrval'>20</span>&gt;&lt;/<span class='tag'>textarea</span>&gt;</a>
+                            </div>
+
+                            <!--button element-->
+                            <div style="margin-left:180px;">
+                                <a href="#mymodal" class="buttonelm" data-toggle="modal" onclick="buttonelm();" onmouseenter="over('buttonelm')" onmouseleave="out('buttonelm')">&lt;<span class='tag'>button</span> <span class='atr'>type</span>=<span class='atrval'>&quot;submit&quot;</span> <span class='atr'>formaction</span>=<span class='atrval'>&quot;getreview.php&quot;</span> <span class='atr'>formmethod</span>=<span class='atrval'>&quot;post&quot;</span>&gt;Post review&lt;/<span class='tag'>button</span>&gt;</a>
+                            </div>
+
+                            <!--end of form element-->
+                            <div style="margin-left:150px;">
+                                &lt;<a href="#mymodal" class="formelm" data-toggle="modal" onclick="formelm();" onmouseenter="over('formelm')" onmouseleave="out('formelm')">/<span class='tag'>form</span></a>&gt;
+                            </div>
+
+                            <!--end of div element-->
+                            <div style="margin-left:120px;">
+                                &lt;<a href="#mymodal" class="divelm" data-toggle="modal" onclick="divelm();" onmouseenter="over('divelm')" onmouseleave="out('divelm')">/<span class='tag'>div</span></a>&gt;
+                            </div>
+
+                            <!--end of section element-->
+                            <div style="margin-left:90px;">
+                                &lt;<a href="#mymodal" class="sectionelm" data-toggle="modal" onclick="sectionelm();" onmouseenter="over('sectionelm')" onmouseleave="out('sectionelm')">/<span class='tag'>section</span></a>&gt;
+                            </div>
+
+                        <!--end of section collapse-->
+                        </div>
+                            
+                        <br/>
+                        
+                        <!--end of main element-->
+                        <div style="margin-left:60px;">
+                            &lt;<a href="#mymodal" class="mainelm" data-toggle="modal" onclick="mainelm();" onmouseenter="over('mainelm')" onmouseleave="out('mainelm')">/<span class='tag'>main</span></a>&gt;
+                        </div>
+
+                    <!--end of main collapse-->
+                    </div>
+                    
+                    <br/>
+
+                    <!--footer element collapse section-->
+                    <div style='margin-left: 50px;' >
+                        <button class="btn btn-outline-info btn-sm" type="button" data-toggle="collapse" data-target="#footercollapse" aria-expanded="false" aria-controls="footercollapse">Footer Element</button>
+                    </div>
+                
+                    <div id='footercollapse' class="collapse" style="padding-top:10px;">
+                
+                    
+                        <!--footer element-->
+                        <div style="margin-left:60px;">
+                            &lt;<a href="#mymodal" class="footerelm" data-toggle="modal" onclick="footerelm();" onmouseenter="over('footerelm')" onmouseleave="out('footerelm')"><span class='tag'>footer</span></a>&gt; Copyright &copy; 2015 | All rights  reserved &lt;<a href="#mymodal" class="footerelm" data-toggle="modal" onclick="footerelm();" onmouseenter="over('footerelm')" onmouseleave="out('footerelm')">/<span class='tag'>footer</span></a>&gt;
+                        </div>
+                        
+                    <!--end of footer collapse-->
+                    </div>
+
+                    <br/>
+                    
+                    <!--end of body element-->
+                    <div style="margin-left:30px;">
+                        &lt;<a href="#mymodal" class="bodyelm" data-toggle="modal" onclick="bodyelm();" onmouseenter="over('bodyelm')" onmouseleave="out('bodyelm')">/<span class='tag'>body</span></a>&gt;
+                    </div>
+
+                <!--end of head collapse-->
+                </div>
+
+                <!--end of html element-->
+                <div>
+                    &lt;<a href="#mymodal" class="htmlroot" data-toggle="modal" onclick="htmlroot();" onmouseenter="over('htmlroot')" onmouseleave="out('htmlroot')">/<span class='tag'>html</span></a>&gt;
+                </div>
+            
+            <!--end of div script-->
+            </code>
+            </div>
+        
+        <!--end of div content-->
+        </div>
+        
+        <!--copyright section-->
+        <footer>
+            <div id='footer'>
+                <img src='resources/images/copyrightlogo1.png' style='width:25px;height:25px;background-color: transparent;'>&nbsp;&nbsp;Developed by: <strong>Mohammad Imam Hossain</strong> | Email: <a href='mailto:imambuet11@gmail.com'><strong>imambuet11@gmail.com</strong></a> | All rights reserved
+            </div>
+        </footer>
+        
+        <!--modal section-->
+        <div class="modal fade" id="mymodal">
+          <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title" id="mtitle"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body" id="mbody">
+                
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <!--including my script program-->
+        <script src="resources/js_scripts/myscript.js"></script>
+            
+        
+    </body>
+    
+</html>
