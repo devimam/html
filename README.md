@@ -1,6 +1,6 @@
 # HTML5 Documentation - Click to Learn
 
-The main purpose of this project is to list all the necessary HTML tags and their attributes together. As a result, when we need to understand any of the tags or attributes, it is just one click away. All the descriptions and sample scripts are collected from the HTML specification of [WHATWG](https://html.spec.whatwg.org/) page. Hope this project will make you more strong in understanding the HTML5 and help you to go ahead with your web projects more efficiently.
+The main purpose of this project is to document all the necessary HTML tags and their attributes together. As a result, when we need to understand any of the tags or attributes, it is just one click away. All the descriptions and sample scripts are collected from the HTML specification of [WHATWG](https://html.spec.whatwg.org/) page. Hope this project will make you more strong in understanding the HTML5 and help you to go ahead with your web projects more efficiently.
 
 ## Getting Started
 
