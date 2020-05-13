@@ -31,6 +31,10 @@ Version 1.0
 
 * **Mohammad Imam Hossain** - [LinkedIn](https://www.linkedin.com/in/mohammad-imam-hossain/)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 ## Acknowledgments
 
 * [The HTML5 Specification](https://html.spec.whatwg.org/)
