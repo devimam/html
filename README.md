@@ -35,7 +35,7 @@ Version 1.0
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Acknowledgments
+## Acknowledgements
 
 * [The HTML5 Specification](https://html.spec.whatwg.org/)
 * HTML5 Documentation of [Developers Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML)
