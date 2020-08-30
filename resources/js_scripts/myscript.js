@@ -23,10 +23,10 @@ function out(cname){
     }
 }
 
-function help(){
+function helpelm(){
     document.getElementById("mtitle").innerHTML="How to Use this Website?";
     
-    document.getElementById("mbody").innerHTML="<div style='text-align:center;'><iframe src='https://www.youtube.com/embed/HHMWocHBH5o' width='740' height='400' allow='autoplay' allowfullscreen ></iframe></div>";
+    document.getElementById("mbody").innerHTML="<div style='text-align:center;'><iframe src='https://www.youtube.com/embed/HHMWocHBH5o' width='740' height='400' allow='autoplay' allowfullscreen></iframe></div>";
 }
 
 //documentations
