@@ -11,6 +11,7 @@ All rights reserved.
 
     <head>
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="Mohammad Imam Hossain, Email:imambuet11@gmail.com">
         <meta name="description" content="This website explains almost every important HTML elements and attributes and the corresponding explanation.">
         <meta name="keywords" content="html, manual, documentation, html5, html tags, html attributes">
@@ -18,22 +19,21 @@ All rights reserved.
         <!--title of the document-->
         <title>HTML Documentation</title>
         
-        <!--adding my own icons and stylesheet-->
-        <link rel="icon" href="resources/icons/myicon.ico">
-        <link rel="stylesheet" href="resources/styles/mystyle.css">
-    
         <!--adding bootstrap libraries-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        
+		
+		<!--adding my own icons and stylesheet-->
+        <link rel="icon" href="resources/icons/myicon.ico">
+        <link rel="stylesheet" href="resources/styles/mystyle.css">
     </head>
     
     <body>
-        <header id="header">
-            <h3>HTML5 Documentation - Click to Learn</h3>
+        <header id="header" class="clearfix">
+            <h3>
+				HTML5 Documentation - Click to Learn
+				<iframe src="https://ghbtns.com/github-btn.html?user=devimam&repo=html&type=star&count=true&size=large" 
+				frameborder="0" scrolling="0" width="170" height="30" title="Star this project" class="float-right mt-1"></iframe>
+			</h3>
         </header>
         
         <!--whole output page section-->
@@ -41,7 +41,7 @@ All rights reserved.
             
             <!--show the output and html reference button-->
             <div style="float:right;">
-                <a href="#mymodal" class="help btn btn-outline-info btn-sm" title="How to use this site!" data-toggle="modal" onclick="help();"><b>?</b></a>
+                <a href="#mymodal" class="btn btn-outline-info btn-sm" data-toggle="modal" title="How to use this site!" onclick="helpelm();"><b>?</b></a>
                 <a type="button" class="btn btn-outline-info btn-sm" target="_blank" href="resources/html_scripts/demooutput.html">HTML Output of this Script</a> <a type="button" class="btn btn-outline-info btn-sm" target="_blank" href="https://html.spec.whatwg.org/">Visit HTML5 Documentation Page</a>
             </div>
            
@@ -709,6 +709,10 @@ All rights reserved.
           </div>
         </div>
         
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!--including my script program-->
         <script src="resources/js_scripts/myscript.js"></script>
             
