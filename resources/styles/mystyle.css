@@ -4,7 +4,6 @@ Author: Mohammad Imam Hossain
 Date: 2020-04-29
 All rights reserved.
 */
-
 body{
     background-image: url('../images/back3.jpg');
     background-color: slategray;
@@ -23,7 +22,7 @@ header{
     
     position:sticky;
     top:0px;
-    height:55px;
+    min-height:55px;
 }
 
 header>h3{
@@ -63,7 +62,7 @@ div#content{
     background-color: rgba(0,0,0,0.8);
     width:100%;
     padding: 30px;
-    min-height: calc(100vh - 55px);
+    min-height: calc(100vh - 77px);
 }
 
 div#content code{
@@ -100,4 +99,10 @@ div#script{
 
 .comment1{
     color: rgb(122, 122, 82);
+}
+
+@media (min-width:0px) and (max-width:768px){
+	body{
+		font-size: 150%;
+	}
 }
