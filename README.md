@@ -20,7 +20,7 @@ No explicit installation is necessary.
 
 * HTML5
 * CSS3
-* Javascript
+* JavaScript
 * Bootstrap 4
 
 ## Versioning
